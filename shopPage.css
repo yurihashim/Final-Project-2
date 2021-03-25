@@ -1,0 +1,56 @@
+.category {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.category .categoryDescript {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr.line {
+  border-top: 1px solid #b9b6b6;
+  width: 90%;
+  margin: auto;
+}
+
+.shopItmes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 0.5px;
+  padding: 10px;
+  margin: 50px 10px;
+}
+
+.shopItmes a {
+  text-decoration: none;
+  color: #350e0e;
+}
+
+.shopItmes h4 {
+  color: #350e0e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.shopItmes .price {
+  color: #350e0e;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.shopItmes > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.shopItmes > div img {
+  width: 80%;
+  height: 200px;
+}
+/*# sourceMappingURL=shopPage.css.map */

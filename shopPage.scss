@@ -1,0 +1,51 @@
+.category {
+    text-align: center;
+    margin-top: 100px;
+
+    .categoryDescript {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        line-height: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+hr.line {
+    border-top: 1px solid rgb(185, 182, 182);
+    width: 90%;
+    margin: auto;
+}
+
+.shopItmes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0.5px;
+    padding: 10px;
+    margin: 50px 10px;
+  
+    a {
+        text-decoration: none;
+        color:rgb(53, 14, 14);
+    }
+    h4 {
+        color:rgb(53, 14, 14);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+    }
+    .price { 
+        color:rgb(53, 14, 14);
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+  
+  .shopItmes > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  
+    img {
+        width: 80%;  
+        height: 200px;
+    }
+  }
