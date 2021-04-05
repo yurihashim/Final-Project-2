@@ -54,6 +54,237 @@ hr.line {
   height: 200px;
 }
 
+/* (A) ENTIRE PAGE */
+#cart-wrap {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 1000px;
+  margin: 100px 160px;
+}
+
+input.cart, button.cart {
+  font-size: 1em;
+  padding: 10px;
+  border: none;
+  color: white;
+  background: #679967;
+  cursor: pointer;
+}
+
+/* (B) PRODUCTS LIST */
+#cart-products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 150px;
+  padding: 10px;
+}
+
+.p-item {
+  padding: 30px;
+  width: 150%;
+  text-align: center;
+  background-color: #f3f1f1;
+}
+
+.p-name {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #350e0e;
+}
+
+.p-img {
+  max-width: 180px;
+}
+
+.p-desc {
+  color: #777;
+  margin-top: 10px;
+  line-height: 1.5em;
+}
+
+.p-price {
+  margin: 10px 0;
+  color: #350e0e;
+}
+
+input.p-add {
+  width: 80%;
+}
+
+/* (D) CURRENT SHOPPING CART */
+#cart-items {
+  padding: 30px;
+  background: #f1f1f1;
+  border: solid #074e07;
+  margin: 80px 200px;
+}
+
+.c-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.c-name {
+  width: 100%;
+  line-height: 1.5em;
+}
+
+.c-del {
+  width: 10%;
+}
+
+.c-qty {
+  width: 75%;
+  font-size: 1em;
+}
+
+input.c-empty, input.c-checkout {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* (E) RESPONSIVE */
+@media screen and (max-width: 768px) {
+  #cart-wrap {
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+  }
+  #cart-products {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row2 {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  /* IE10 */
+  -webkit-box-flex: 25%;
+          flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  /* IE10 */
+  -webkit-box-flex: 50%;
+          flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  /* IE10 */
+  -webkit-box-flex: 75%;
+          flex: 75%;
+}
+
+.col-25, .col-50, .col-75 {
+  padding: 0 16px;
+}
+
+.checkoutContainer {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin: 100px 10px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #679967;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #074e07;
+}
+
+a {
+  text-decoration: none;
+  color: #074e07;
+  line-height: 10px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+hr {
+  margin-top: 20px;
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -91,6 +322,7 @@ span {
   color: #074e07;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  line-height: 40px;
 }
 
 .sidenav a:hover {
@@ -140,6 +372,7 @@ span {
           align-items: center;
   color: #074e07;
   text-decoration: none;
+  line-height: 40px;
 }
 
 .subnav-content a:hover {
@@ -255,7 +488,7 @@ h1 a {
 h2 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
   color: #350e0e;
 }
 
@@ -274,16 +507,18 @@ h2 {
   color: #350e0e;
 }
 
-.newArrival h4 {
+.newArrival h5 {
   color: #350e0e;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
+  margin-top: 10px;
 }
 
 .newArrival .price {
   color: #350e0e;
   font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
 }
 
 .newArrival > div {
@@ -302,17 +537,8 @@ h2 {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  margin-bottom: 80px;
-}
-
-.container h3 {
-  color: #4b3131;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-}
-
-.container .image img {
-  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 50px;
 }
 
 .container .message {
@@ -322,11 +548,33 @@ h2 {
   height: 99%;
 }
 
+.container .message h3 {
+  color: #4b3131;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  margin-top: 70px;
+}
+
+.container .message .containerDesc {
+  color: grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 30px;
+  width: 100%;
+  height: 200px;
+}
+
+.container .image img {
+  width: 100%;
+  height: 400px;
+}
+
 .shopMore {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   grid-gap: 10px;
   padding: 10px;
   margin: 100px 20px;
@@ -347,6 +595,13 @@ h2 {
   color: #4b3131;
   font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 30px;
+}
+
+.shopMore img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
 }
 
 .shopMore > div {
@@ -364,13 +619,119 @@ h2 {
   position: relative;
   text-align: center;
   color: white;
+  margin-top: 100px;
 }
 
-.centered {
+.aboutus img {
+  width: 100%;
+}
+
+.aboutus .centered {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 80px;
+  font-weight: bold;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.aboutusDesc {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: grey;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  line-height: 30px;
+}
+
+.SNS {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.SNS .fa-facebook, .SNS .fa-twitter, .SNS .fa-instagram {
+  list-style: none;
+  display: inline-block;
+  margin: 0% 20px;
+}
+
+.SNS .fa-facebook {
+  color: blue;
+}
+
+.SNS .fa-twitter {
+  color: #3cd7e2;
+}
+
+.SNS .fa-instagram {
+  color: #fa62e6;
+}
+
+input[type=text1], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit1] {
+  background-color: #679967;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+}
+
+input[type=submit1]:hover {
+  background-color: #074e07;
+}
+
+.contact1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 100px 20px;
+}
+
+.contact1 .labelname1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: grey;
+  float: left;
+}
+
+.footerInfo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.footerInfo li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.footerInfo li a {
+  text-decoration: none;
+  color: grey;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 30px;
+  color: grey;
 }
 /*# sourceMappingURL=style.main.css.map */

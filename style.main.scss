@@ -1,4 +1,6 @@
-@import 'shopPage';
+@import 'products';
+@import 'checkout';
+@import 'cart';
 
 * {
     box-sizing: border-box;
@@ -7,8 +9,8 @@
 
 span{
   font-size:40px; 
-  cursor:pointer; 
-  color:rgb(7, 78, 7); 
+  cursor:pointer;
+  color:rgb(7, 78, 7);
   margin-left:30px;
 }
 
@@ -33,6 +35,7 @@ span{
     font-size: 25px;
     color: rgb(7, 78, 7);
     transition: 0.3s;
+    line-height: 40px;
   }
 }
 
@@ -75,6 +78,7 @@ span{
     align-items: center;
     color: rgb(7, 78, 7); 
     text-decoration: none;
+    line-height: 40px;
   }
 }
 
@@ -176,7 +180,7 @@ h1 {
 h2 {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
   color:rgb(53, 14, 14);
 }
 
@@ -191,15 +195,17 @@ h2 {
       text-decoration: none;
       color:rgb(53, 14, 14);
   }
-  h4 {
+  h5 {
       color:rgb(53, 14, 14);
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 15px;
+      margin-top: 10px;
   }
   .price { 
       color:rgb(53, 14, 14);
       font-size: 15px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-top: 10px;
   }
 }
 
@@ -217,25 +223,38 @@ h2 {
 .container {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-bottom: 80px;
-
-  h3 {
-      color: rgb(75, 49, 49); 
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 15px;
-  }
-
-  .image {
-    img {
-      width: 100%;
-    }
-  }
+  margin-top: 200px;
+  margin-bottom: 50px;
 
   .message {
     background-color: rgb(236, 234, 234);
     text-align: center;
     width: 100%;
     height: 99%;
+
+    h3 {
+      color: rgb(75, 49, 49); 
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 50px;
+      margin-top: 70px;
+    }
+
+    .containerDesc {
+      color: grey;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+      line-height: 40px;
+      margin-top: 30px;
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+  .image {
+    img {
+      width: 100%;
+      height: 400px;
+    }
   }
 }
 
@@ -244,7 +263,7 @@ h2 {
 
 .shopMore {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto;
   grid-gap: 10px;
   padding: 10px;
   margin: 100px 20px;
@@ -262,6 +281,13 @@ h2 {
       color: rgb(75, 49, 49); 
       font-size: 15px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-top: 30px;
+  }
+
+  img {
+    width: 100%;
+    height:250px; 
+    margin-bottom: 30px;
   }
 }
 
@@ -280,13 +306,111 @@ h2 {
   position: relative;
   text-align: center;
   color: white;
+  margin-top: 100px;
+
+  img {
+    width: 100%;
+  }
+  .centered {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.aboutusDesc {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: grey;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  line-height: 30px;
 }
 
+.SNS {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
+  .fa-facebook, .fa-twitter, .fa-instagram {
+    list-style: none;
+    display: inline-block;
+    margin: 0% 20px;
+  }
+  .fa-facebook {
+    color: blue; 
+  }
+  .fa-twitter {
+    color: rgb(60, 215, 226);
+  }
+  .fa-instagram {
+    color: rgb(250, 98, 230); 
+  }
+}
+
+input[type=text1], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit1] {
+  background-color: rgb(103, 153, 103);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+}
+
+input[type=submit1]:hover {
+  background-color: rgb(7, 78, 7);
+}
+
+.contact1{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 100px 20px;
+
+  .labelname1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: grey;
+    float: left;
+  }
+}
+
+.footerInfo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  list-style: none;
+
+  li {
+    display:inline-block;
+    margin-left: 15px;
+    a {
+      text-decoration: none;
+      color: grey;
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 30px;
+  color: grey;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='style.main.css'>
+    <script src="https://kit.fontawesome.com/5d98c05ec0.js" crossorigin="anonymous"></script>
+    <script src = "script.js"></script>
+    <script src = "product.js"></script>
+    <script src = "shopCart.js"></script>
+    <title>eco_living</title>
+</head>
+<body>
+
+    <header class = "header">
+        <div class ="headerContainer">
+            <div class = "headerInner">
+                <span onclick="openNav()">&#9776;</span>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="./index.html">HOME</a>
+                    <div class="subnav">
+                        <button class="subnavbtn">COLLECTIONS<i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                            <a href="./health＿beauty.html">Health & Beauty</a>
+                            <a href="./Bath.html">Bath</a>
+                            <a href="./Kitchen.html">Kitchen</a>
+                            <a href="Vegan_VegetarianFood.html">Vegan & Vegetarian Food</a>
+                            <a href="./ZeroWaste.html">Zero Waste</a>
+                        </div>
+                    </div>
+                    <a href="./About.html">About</a>
+                    <a href="./checkout.html">Checkout<i class="fas fa-shopping-cart fa-1.5x"></i></a> 
+                </div>
+
+                <h1 class ="title">
+                <a href = "./index.html">eco_living</a>
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="row2">
+        <div class="col-75">
+            <div class="checkoutContainer">
+                <form action="/action_page.php">
+        
+                    <div class="row2">
+                        <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="eco_living">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="eco_living@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="xxx st, Vancouver, BC xxx xxx">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="Vancouver">
+  
+                            <div class="row2">
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="Canada">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="xxxxx">
+                                </div>
+                            </div>
+                        </div>
+  
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                                <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </div>
+                            <label for="cname">Name on Card</label>
+                                <input type="text" id="cname" name="cardname" placeholder="eco_living">
+                            <label for="ccnum">Credit card number</label>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                                <input type="text" id="expmonth" name="expmonth" placeholder="March">
+                        
+                            <div class="row2">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                        <input type="text" id="expyear" name="expyear" placeholder="2022">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="xxx">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    </label>
+                        <input type="submit" value="Confirm" class="btn">
+                </form>
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="checkoutContainer">
+                <h4>Cart <span class="price" style="color:rgb(75, 49, 49)"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
+                <p><a href="...">Organic Body Soap</a> <span class="price">$18</span></p>
+                <p><a href="...">eco friendly dish kit</a> <span class="price">$18</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:rgb(75, 49, 49)"><b>...</b></span></p>
+            </div>
+        </div>
+    </div>  
+
+
+    <footer class = "footer">
+        <hr class = "line">
+        <div class = "SNS">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.instagram.com/?hl=ja"><i class="fab fa-instagram fa-2x"></i></a>   
+        </div>
+        <hr class = "line">
+        <ul class = "footerInfo">
+            <li><a href = "......">PRIVACY POLICYU</a></li>
+            <li><a href = "......">REFUND POLICY</a></li>
+            <li><a href = "......">TERMS OF SERVICE</a></li>
+            <li><a href = "......">SHIPPING POLICY</a></li>
+        </ul>
+
+        <p class="copyright">©️ 2021 eco_living. All rights reserved.</p> 
+
+    </footer>
+
+</body>
+</html>
