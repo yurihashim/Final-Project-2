@@ -194,7 +194,7 @@ var cart = {
       // RECORD TO DATABASE
       // PAYMENT
       // WHATEVER IS REQUIRED
-      alert("TO DO");
+      alert("...");
   
       /*
       var data = new FormData();
